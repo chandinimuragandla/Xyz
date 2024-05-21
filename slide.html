@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1000px;
+            height:100vh;
+            background-color: rgb(86, 197, 197,0.8);
+            margin: 0px auto;
+        }
+        .slider{
+            width:1000px;
+            height:400px;
+            background-image: url(./images/itlogo.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 5px 5px 10px red;
+            animation: slider 8s infinite;
+            /*taken separately
+            animation-name: slider;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;*/
+        }
+        @keyframes slider{
+            0%{
+                background-image: url(images/logocin.png);
+            }
+            25%{
+                background-image: url(images/logocin.png); 
+            }
+            50%{
+                background-image: url(./images/itlogo.jpg);
+            }
+            100%{
+                background-image: url(images/itlogo.jpg);
+            }
+        }
+        .menu{
+
+        }
+        ul{
+            height: 50px;
+            width: 100%;
+            background-color: chocolate;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-size: 20px;
+           justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="menu">
+        <ul>
+            <li1>HOME</li>
+            <li1>Events</li1>
+            <li2>photos</li2>
+            <li3>gallery</li3>
+            <li4>contact</li4>
+        </ul>
+       </div>
+        <div class="slider">
+            <div class="img">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
